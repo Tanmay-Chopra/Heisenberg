@@ -1,0 +1,37 @@
+import java.util.*;
+public class Main
+{Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+	    System.out.println("Enter the denomination");
+	    int x=sc.nextInt();
+	    int temp=x,p=0,tt=2000,fh=500,th=200,oh=100,fi=50,tw=20,te=10,f=5,t=2,o=1;
+	    int ctt=0,cfh=0,cth=0,coh=0,cfi=0,ctw=0,cte=0,cf=0,ct=0,co=0;
+	    while(temp!=0)
+	    {
+	        while((temp-tt)>0)
+	        {ctt++; p+=tt; temp-=tt;}
+	        while((temp-fh)>0)
+	        {cfh++;p+=fh;temp-=fh;}
+	        while((temp-th)>0)
+	        {cth++; p+=th; temp-=th;}
+	        while((temp-oh)>0)
+	        {coh++; p+=oh; temp-=oh;}
+	        while((temp-fi)>0)
+	        {cfi++; p+=fi; temp-=fi;}
+	         while((temp-tw)>0)
+	        {ctw++; p+=tw; temp-=tw;}
+	         while((temp-te)>0)
+	        {cte++; p+=te; temp-=te;}
+	         while((temp-f)>0)
+	        {cf++; p+=f; temp-=f;}
+	         while((temp-t)>0)
+	        {ct++; p+=t; temp-=t;}
+	         while((temp-o)>0)
+	        {co++; p+=o; temp-=o;}
+	         
+	        }
+	        if(p==x)
+		System.out.println("denominations are ="+ctt /n,cfh /n,cth /n,coh /n,cfi /n,ctw /n,cte /n,cf /n,ct /n,co /n);
+	}
+}

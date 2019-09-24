@@ -1,0 +1,11 @@
+
+n=int(input("enter the number to sort its digits"))
+t=n
+list=[]
+while t!=0:
+    d=t%10
+    list.append(d)
+    t//=10
+list.sort()    
+for i in list:
+    print(i,end="")
